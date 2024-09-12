@@ -41,17 +41,47 @@
 // button.classList.toggle('font-size')
 // button.classList.contains('backgroundd')
 
-let ul= document.querySelector('ul')
-console.log(ul)
 
-let createEL = document.createElement('li')
-console.log(createEL)
+// let ul= document.querySelector('ul')
+// console.log(ul)
 
-createEL.innerText="list 5"
-ul.append(createEL)
+// let createEL = document.createElement('li')
+// console.log(createEL)
 
-let createEL1 = document.createElement('li')
-console.log(createEL1)
+// createEL.innerText="list 5"
+// ul.append(createEL)
 
-createEL1.innerText="list 0"
-ul.prepend(createEL1)
+// let createEL1 = document.createElement('li')
+// console.log(createEL1)
+
+// createEL1.innerText="list 0"
+// ul.prepend(createEL1)
+
+
+// let event= document.querySelector('button')
+// console.log(event)
+
+// function one(){
+//     console.log("mera naam papu pelu hai")
+// }
+// function two(){
+//     console.log("mera naam papu pelu nhi  hai")
+// }
+// event.onclick= two
+// event.onclick= one
+
+// addeventlistener
+
+let event1 = document.querySelector('button')
+console.log(event1) 
+
+function one(){
+    console.log("mera naam papu pelu hai")
+}
+function two(){
+    console.log("mera naam papu pelu nhi  hai")
+}
+
+event1.addEventListener('click',()=>{
+    return one(),two()
+})
